@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body class="w3-content" style="max-width:800px">
+		<header class="w3-container">
+			{% include header.html %}
+		</header>
+		<div class="content w3-container">
+			{{ content }}
+		</div>
+		{% unless page.layout == "category" %}
+		<div class="last10 w3-container">
+			{% include last10.html %}
+		</div>
+		{% endunless %}
+		<footer class="w3-row">
+			{% include footer.html %}
+		</footer>
+	</body>
+</html>
+

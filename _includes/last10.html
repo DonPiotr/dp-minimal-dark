@@ -1,0 +1,12 @@
+<h3>Ultimi 10 articoli:</h3>
+
+<div class="w3-row-padding">
+	{% for post in site.posts limit:10 %}
+	<div class="w3-third w3-padding">
+    		{% include post_item.html post=post cat=true %}
+	</div>
+  	{% endfor %}
+</div>
+
+<small>Per dei articoli più antichi vedi il menu sopra.</small>
+

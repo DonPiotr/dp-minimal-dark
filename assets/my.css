@@ -1,0 +1,65 @@
+/*
+ * 070F2B
+ * 1B1A55
+ * 535C91
+ * 9290C3
+ * FFFFFF
+ * */
+
+body {
+	background-color: #070F2B;
+	color: #fff;
+}
+
+header h1 {
+	font-weight: bold;
+	margin-bottom: 0;
+ 	color: #9290C3;
+}
+header a {text-decoration: none;}
+
+.content { 
+	border-top: 6px solid #9290C3;
+	border-bottom: 6px solid #9290C3;
+}
+
+.content h1 {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.content a, footer a, .last10 a {color: #9290C3;}
+
+footer h5 {
+	text-align: center;
+}
+
+footer ul {list-style-type: none;}
+
+.last10 { 
+	border-bottom: 6px solid #9290C3;
+	padding-bottom: 8px;
+}
+
+.post-item {
+	background-color: #1B1A55;
+}
+
+.w3-bar-item {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.w3-bar-item img {margin-bottom: 3px;}
+
+.bar-item-hover:hover {
+	background-color: #535C91 !important;
+}
+
+
+figure.highlight, div.highlight {
+	border:1px solid #535C91;
+	border-radius: 8px;
+	padding-left: 16px;
+}
+

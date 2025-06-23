@@ -1,0 +1,23 @@
+title: Titolo del sito
+description: >- # this means to ignore newlines until "baseurl:"
+  Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.
+  Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+author: Autore
+locale: it_IT
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - screenshot.png
+

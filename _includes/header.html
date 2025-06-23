@@ -1,0 +1,28 @@
+<h1><a href="/">{{site.title}}</a></h1>
+<div class="nav w3-bar">
+	<div class="w3-bar-item bar-item-hover">
+		<a title="Homepage" href="/">
+			<img src="/assets/home.svg" width="18px">
+		</a>
+	</div>
+	{% assign pages_sorted = site.pages | sort: "index" %}
+	{% for page in pages_sorted %}
+		{% unless page.hide %}
+		{% if page.icon %}
+		<div class="w3-bar-item bar-item-hover">
+			<a class="{{page.icon}} w3-large" title="{{page.title}}" href="/"></a>
+		</div>
+		{% else %}
+		<div class="w3-bar-item bar-item-hover">
+			<a href="{{page.url}}">{{page.title}}</a>
+		</div>
+		{% endif %}
+		{% endunless %}
+	{% endfor %}
+	<div class="w3-bar-item w3-right bar-item-hover">
+		<a title="RSS feed" href="/feed.xml">
+			<img src="/assets/rss.svg" width="18px">
+		</a>
+	</div>
+
+</div>

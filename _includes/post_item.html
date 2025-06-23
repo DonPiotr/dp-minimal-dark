@@ -1,0 +1,9 @@
+<div class="post-item w3-card w3-padding w3-round-large">
+	<b><a href="{{ include.post.url }}">{{ include.post.title }}</a><br /></b>
+	<span class="w3-small">
+		{% if include.cat %}
+		[{{ include.post.category }}] <br />
+		{% endif %}
+		{{ include.post.date | italian_date }}
+	</span>
+</div>

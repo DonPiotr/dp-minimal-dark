@@ -1,0 +1,12 @@
+<div class="w3-col s6 w3-padding">
+	<h5>{{site.title}}</h5>
+	<p class="w3-small w3-justify">{{site.description}}</p>
+	{% if site.author %}
+	<p class="w3-small w3-center">&copy; {{ "now" | date: "%Y" }} {{site.author}}</p>
+	{% endif %}
+</div>
+<div class="w3-col s6 w3-padding">
+	{% capture my_include %}{% include footer_right_col.md%}{% endcapture %}
+	{{ my_include | markdownify }}
+</div>
+
