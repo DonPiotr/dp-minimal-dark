@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Homepage
-icon: fa fa-home
 hide: true
 ---
 

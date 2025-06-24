@@ -2,26 +2,26 @@
 <div class="nav w3-bar">
 	<div class="w3-bar-item bar-item-hover">
 		<a title="Homepage" href="/">
-			<img src="/assets/home.svg" width="18px">
+		<svg class="icona-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M3 10L12 3l9 7v11a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1V10z" />
+		</svg>
 		</a>
 	</div>
 	{% assign pages_sorted = site.pages | sort: "index" %}
 	{% for page in pages_sorted %}
-		{% unless page.hide %}
-		{% if page.icon %}
-		<div class="w3-bar-item bar-item-hover">
-			<a class="{{page.icon}} w3-large" title="{{page.title}}" href="/"></a>
-		</div>
-		{% else %}
+		{% unless page.hide or page.name == "/feed.xml"%}
 		<div class="w3-bar-item bar-item-hover">
 			<a href="{{page.url}}">{{page.title}}</a>
 		</div>
-		{% endif %}
 		{% endunless %}
 	{% endfor %}
 	<div class="w3-bar-item w3-right bar-item-hover">
 		<a title="RSS feed" href="/feed.xml">
-			<img src="/assets/rss.svg" width="18px">
+			<svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+				<path d="m 267.1875,1386.6797 c -146.773,0 -266.25,119.3598 -266.25,266.1328 0,146.773 119.476,266.25 266.25,266.25 146.774,0 266.13281,-119.477 266.13281,-266.25 0,-146.773 -119.35881,-266.1328 -266.13281,-266.1328 z" />
+  				<path d="m 0,628.94531 v 408.86719 h 53.320312 c 457.066998,0 828.925778,371.8588 828.925778,828.9258 v 53.3203 h 408.86721 v -53.3203 c 0,-682.56 -555.33899,-1237.79299 -1237.792988,-1237.79299 z" />
+  				<path d="m 0,0 v 408.86719 h 53.320312 c 803.839998,0 1457.812488,653.97251 1457.812488,1457.81251 V 1920 H 1920 v -53.3203 C 1920,837.45269 1082.5473,0 53.320312,0 Z" />
+			</svg>
 		</a>
 	</div>
 
